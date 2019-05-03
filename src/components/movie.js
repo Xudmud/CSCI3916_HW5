@@ -25,10 +25,10 @@ class Movie extends Component {
         };
 
         const ReviewInfo = ({reviews}) => {
-            return reviews.map((review, i) =>
+            return reviews.map((reviews, i) =>
                 <p key={i}>
-                <b>{review.username}</b> {review.review}
-                    <Glyphicon glyph={'star'} /> {review.rating}
+                <b>{reviews.username}</b> {reviews.review}
+                    <Glyphicon glyph={'star'} /> {reviews.rating}
                 </p>
             );
         }

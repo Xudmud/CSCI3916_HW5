@@ -44,9 +44,9 @@ class Movie extends Component {
                     <ListGroup>
                         <ListGroupItem>{currentMovie.title}</ListGroupItem>
                         <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
-                        {/*<ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>*/}
+                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
                     </ListGroup>
-                    {/*<Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>*/}
+                    <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
                 </Panel>
             );
         };

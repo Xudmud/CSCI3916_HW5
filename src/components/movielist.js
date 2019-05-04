@@ -33,6 +33,7 @@ class MovieList extends Component {
     render() {
 
         const MovieListCarousel= ({movieList}) => {
+            console.log(movieList);
             if (!movieList) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }

@@ -7,7 +7,5 @@ Login
 Get movie list  
 Movie detail  
 Average reviews  
-Add Review  
-
-**Not working**  
+Add Review   
 Top-rated movies  

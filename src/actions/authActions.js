@@ -16,10 +16,10 @@ function logout(){
 
 export function submitLogin(data){
     const env = runtimeEnv();
-    console.log(`${process.env.REACT_APP_API_URL}/signin`);
+    console.log(`${env.REACT_APP_API_URL}/signin`);
     console.log(data);
     return dispatch => {
-        return fetch(`${process.env.REACT_APP_API_URL}/signin`, {
+        return fetch(`${env.REACT_APP_API_URL}/signin`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

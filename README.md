@@ -6,10 +6,10 @@ Register
 Login  
 Get movie list  
 Movie detail  
+Average reviews  
 
 **Not working**  
 Add review  
-Average reviews  
 Top-rated movies
 
 

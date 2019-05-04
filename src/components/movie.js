@@ -6,7 +6,6 @@ import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
 import runtimeEnv from '@mars/heroku-js-runtime-env';
 import {Col, Form, FormGroup, FormControl, Button, ControlLabel } from 'react-bootstrap';
-import qs from 'qs';
 
 //support routing by creating a new component
 

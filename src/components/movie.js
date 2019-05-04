@@ -60,7 +60,7 @@ class ReviewInput extends Component {
             })
             .then((res) => {
                 console.log("res: " + JSON.stringify(res));
-                //window.location.reload();
+                window.location.reload();
             })
             .catch((e) => console.log(e));
 

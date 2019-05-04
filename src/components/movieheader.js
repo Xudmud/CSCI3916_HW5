@@ -17,7 +17,7 @@ class MovieHeader extends Component {
                 <Navbar>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            Movie App
+                            Greg's Web API HW5
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav>

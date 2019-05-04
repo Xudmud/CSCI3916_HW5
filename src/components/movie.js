@@ -32,26 +32,24 @@ class ReviewInput extends Component {
             'review': this.state.details.review,
             'rating': parseInt(this.state.details.rating)
         };
-        let formBody = [];
+        let formBody = {};
         for (let property in details) {
-            let encodedKey = encodeURIComponent(property);
-            let encodedValue = encodeURIComponent(details[property]);
-            formBody.push(encodedKey + "=" + encodedValue);
+            formBody[property] = details[property];
         }
-        formBody = formBody.join("&");
 
         let headers = {
             'Accept': 'application/json',
-            'Content-Type': 'application/x-www-urlencoded',
+            'Content-Type': 'application/json',
             'Authorization': localStorage.getItem('token')
         };
         console.log("headers: "+JSON.stringify(headers));
         console.log("body: "+JSON.stringify(formBody));
+        let strBody = JSON.stringify(formBody);
         return fetch(`${env.REACT_APP_API_URL}/reviews`, {
             method: 'POST',
             mode: 'cors',
             headers: headers,
-            body: formBody
+            body: strBody
         })
             .then((response) => {
                 console.log("response: " + JSON.stringify(response));

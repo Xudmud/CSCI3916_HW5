@@ -1,6 +1,17 @@
 ## Homepage for React app  
 https://gwhw5webapi.herokuapp.com  
 
+**Working**  
+Register  
+Login  
+Get movie list  
+Movie detail  
+
+**Not working**  
+Add review  
+Average reviews  
+Top-rated movies
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
